@@ -5,25 +5,15 @@ const axios = require('axios');
 const Language = require('../language');
 const Lang = Language.getString('wallpaper');
 
-Asena.addCommand({pattern: 'git', fromMe: false, desc: Lang.WP}, (async (message, match) => {
+Asena.addCommand({pattern: 'git', fromMe: false, desc: "Gives github link of the bot"}, (async (message, match) => {
 
-    var r_text = new Array ();
-    
-    
-   
-  r_text[0] = "https://www.pixelstalk.net/wp-content/uploads/2016/03/Pikachu-wallpaper-HD-dowload.jpg";
-    
-    
-    var i = Math.floor(1*Math.random())
+    var skl = await axios.get("https://i.postimg.cc/yxKfcqGQ/Anshad.jpg", { responseType: 'arraybuffer' })
 
-    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+    await message.sendMessage(Buffer(skl.data), MessageType.image, {mimetype: Mimetype.png, caption: `*Github* *(setup)* : *https://github.com/anshadat/Rocky*
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*creater Saidali*
-*owner number wa.me/919946432377*
-*bot setting video : https://youtu.be/_D4ZYuUSXjs
-*githublink       https://github.com/ameer-kallumthodi/pikachu*
-*audio commads    https://github.com/ameer-kallumthodi/pikachu/tree/master/uploads*
-*sticker commads  https://github.com/ameer-kallumthodi/pikachu/tree/master/uploads*
+*Audio comnds* : *https://github.com/anshadat/Rocky/tree/master/uploads*
+
+*Sticker cmnds* : *https://github.com/anshadat/Rocky/tree/master/uploads*
 `}) 
 
 }));

@@ -1,6 +1,6 @@
-/*coded by ameer&hisham
-youtube https://youtube.com/c/ICHUTECH
-https://youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw
+/*coded by anshadvfc
+youtube https://youtube.com/channel/UCQ3NYIDKT6-glPHTPya7b7w
+https://youtube.com/channel/UCQ3NYIDKT6-glPHTPya7b7w
 */
 
 const Asena = require('../events');
